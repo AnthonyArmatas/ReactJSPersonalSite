@@ -1,5 +1,4 @@
-import LinkItem from './LinkItem';
-import links from './links';
+import LinkList from './components/LinkItem';
 
 const Home = () => {
 
@@ -10,12 +9,12 @@ const Home = () => {
 
     return ( 
         <div className="home"> 
-            <div className="link-list">
-                {links.map(link => (
-                <LinkItem key={link.id} title={link.title} url={link.url} />
-                ))}
+            <LinkList />
+            <div className="addLinkBtn">
+                <button onClick={() => handleClick()} >
+                    <img src="/images/AddSign.png" alt="Add A link" />
+                </button>
             </div>
-            <button onClick={() => handleClick()} >DoIt</button>
         </div>
      );
 }

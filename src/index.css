@@ -34,6 +34,19 @@
   padding: 20px;
 }
 /* Link previews / list */
+.link-list {
+  background-color: rgba(1, 34, 245, 0.057);
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.link-list h3 {
+  font-size: 25px;
+  color: #0004ff;
+  margin-bottom: 8px;
+}
+
 .link-item {
   background-color: rgba(1, 34, 245, 0.057);
   padding: 10px 16px;
@@ -43,8 +56,83 @@
 .link-item:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
-.link-item h3 {
+.link-item {
   font-size: 20px;
   color: #3538f1;
   margin-bottom: 8px;
+}
+
+.link-item img {
+  height: auto;
+  width: 80px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.link-item img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.link-item text {
+  border-radius: 4555px;
+}
+
+.link-item a {
+  display: block;
+  color: #3538f1;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.RemoveBtn {
+  position: relative;
+  display: inline-block;  
+  padding-right: 40px;
+  margin-left: 500px;
+}
+
+.RemoveImg {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the right spacing as needed */
+  transform: translateY(70%);
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+li{
+  list-style-type: none;
+}
+
+.addLinkBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.addLinkBtn button{
+  background-color: transparent;
+  border: none;
+}
+
+.addLinkBtn img:hover {
+  filter: brightness(80%);
+}
+
+.addLinkBtn img{
+  width: 50px;
 }
