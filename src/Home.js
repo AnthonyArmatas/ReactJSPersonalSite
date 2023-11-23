@@ -2,9 +2,23 @@ import LinkList from './components/LinkItem';
 
 const Home = () => {
 
-    const handleClick = () => {
-        // Click f12 in browser to see this console.log
-        console.log('Do Something1');
+    const handleClick = async () => {
+        try {
+            // Click F12 in the browser to see the console.log
+            const response = await fetch('http://localhost:3001/api/delete-image/image.jpg', {
+                method: 'DELETE',
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log(data);
+            console.log('Do Something1');
+        } catch (error) {
+            console.error('Error:', error);
+        }
     }
 
     return ( 
