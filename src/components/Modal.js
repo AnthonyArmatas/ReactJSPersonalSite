@@ -1,8 +1,9 @@
 // Modal.js
 import React, { useState } from 'react';
+import axios from 'axios';
 
-const Modal = ({ isOpen, onClose, onSubmit }) => {
-    const [formData, setFormData] = useState({
+const Modal = ({ isOpen, onClose, onSubmit, updateLinkList }) => {
+  const [formData, setFormData] = useState({
         text: '',
         link: '',
         image: null,
@@ -28,7 +29,9 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
         return formData.link.trim() === '';
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
         const formDataForServer = new FormData();
         onSubmit(formData);
         // console.log("Post 1" + formData);
@@ -37,7 +40,16 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
             link: '',
             image: null,
         });
-    }
+        // Close the modal after successful submission
+        onClose();
+
+        // Update the link list in the parent component (Home)
+        updateLinkList();
+        } catch (error) {
+        console.error('Error submitting form:', error.message);
+        // Handle errors appropriately
+        }
+    };
 
     return (
         <div className={`modal ${isOpen ? 'open' : ''}`}>

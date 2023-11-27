@@ -31,8 +31,7 @@
 }
 .content {
   max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: auto;
 }
 /* Link previews / list */
 .link-list {
@@ -87,6 +86,7 @@
 
 
 .RemoveBtn {
+  border: none;
   position: relative;
   display: inline-block;  
   padding-right: 40px;
@@ -102,8 +102,34 @@
   transform: translateY(70%);
   max-width: 100%;
   height: auto;
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+
+  /* Set initial box-shadow (no shadow) */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
+.RemoveImg:hover {
+  /* Add box-shadow for a subtle shadow effect on hover */
+  box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.3);
+}
+
+.HeadShot {
+  width: 300px; /* Set your desired width */
+  height: 12vh; /* Set your desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden; /* Ensure the clipped content is hidden */
+}
+
+.HeadShot img {
+  width: 100%;
+  height: auto;
+  clip-path: circle();
+  transform: scale(0.8); /* Set the desired scale factor */
+  transform-origin: center center; /* Ensure scaling occurs from the center */
+}
 
 
 
