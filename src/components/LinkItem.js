@@ -57,7 +57,7 @@ const LinkList = () => {
               </button>
               <div className="link-item">
                 <a href={link.link} target={link.link} rel="noopener noreferrer">
-                  <img src={link.image} alt={link.text} />
+                <img src={`http://localhost:3001/${link.image}`} alt={link.text} />
                   {link.text}
                 </a>
               </div>

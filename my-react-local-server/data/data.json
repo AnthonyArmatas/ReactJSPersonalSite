@@ -1,80 +1,14 @@
 [
-    {
-      "id": 1,
-      "image": "images/Google__G__Logo.png",
-      "text": "Google",
-      "link": "http://www.google.com"
-    },
-    {
-      "id": 2,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 3,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 4,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 5,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 6,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 7,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 8,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 9,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 10,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 11,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 12,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    },
-    {
-      "id": 13,
-      "image": "images/GitHub.png",
-      "text": "GitHub",
-      "link": "https://www.github.com"
-    }
+  {
+    "id": 1,
+    "image": "images/Google__G__Logo.png",
+    "text": "Google",
+    "link": "http://www.google.com"
+  },
+  {
+    "id": 2,
+    "image": "images/GitHub.png",
+    "text": "GitHub",
+    "link": "https://www.github.com"
+  }
 ]
